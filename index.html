@@ -1,44 +1,321 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+
+  <title>PANDA — Online do‘kon</title>
+
   <link rel="stylesheet" href="./main.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-  <div class="max-w-7xl mx-auto">
-    <header class="flex items-center gap-8 bg-[#F8FAFB] px-4 py-4">
-      <div class="header-logo">
-        <img src="./img/Rang-barang Panda logotipi.png" class="!w-[150px] !h-auto ml-[50px]" alt="PANDA" />
-      </div>
-      <nav class="flex gap-5" >
-        <a href="#">Home</a>
-        <a href="#">Shoes</a>
-        <a href="#">Backpacks</a>
-        <a href="#">Contacts</a>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+
+      <nav class="navbar">
+
+        <a href="#" class="logo">
+          <svg viewBox="0 0 30 25">
+            <path d="M1 2 L15 13 L1 23 Z" fill="#ffb51b"/>
+            <path d="M10 2 L27 13 L10 23 Z" fill="#ff2780"/>
+          </svg>
+          PANDA
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#shoes">Shoes</a></li>
+          <li><a href="#bags">Backpacks</a></li>
+          <li><a href="#contact">Contacts</a></li>
+        </ul>
+
       </nav>
-    </header>
 
-    <!-- <header></header> -->
-
-
+    </div>
+  </header>
 
 
-    <!-- hero -->
+  <main>
 
-    <section class="bg-[#ffebeb]">
-      <div class="">
-        <h1 class="text-4xl font-medium"> MI LED TV A4 PRO 32</h1>
-        <p class="w-[500px] h-[50px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro ullam voluptate dolore perferendis quibusdam neque corrupti amet aliquid sapiente quis!</p>
-        <p>$1200</p>
-        <button>BUY NOW</button>
-        <img src="./img/1794343320812.png" alt="">
+    <!-- HERO -->
+    <section class="container hero-section">
+
+      <div class="hero">
+
+        <div class="hero-content">
+
+          <h1>Mi LED TV 4A PRO 32</h1>
+
+          <p>
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature.
+          </p>
+
+          <div class="hero-price">$1200</div>
+
+          <button class="buy-hero" onclick="addProduct(this)">
+            Buy Now
+          </button>
+
+        </div>
+
+        <img
+          class="hero-image"
+          src="./img/1794343320812.png"
+          alt="Mi LED TV 4A PRO 32"
+        >
+
       </div>
-    </section>
-  </div>
-</body>
 
+      <div class="hero-dots">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+    <section class="container categories">
+
+      <h2 class="section-title">Categories</h2>
+
+      <div class="category-grid">
+
+        <!-- WATCH -->
+        <a href="#shoes" class="category cat-watch">
+
+          <h3>Watch</h3>
+
+          
+        </a>
+
+
+        <!-- BAG -->
+        <a href="#bags" class="category cat-bag">
+
+          <h3>Bag</h3>
+
+
+        </a>
+
+
+        <!-- SHOES -->
+        <a href="#shoes" class="category cat-shoe">
+
+          <h3>Shoes</h3>
+
+
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- SHOES -->
+    <section class="products-section" id="shoes">
+
+      <div class="container">
+
+        <div class="products-heading">
+          <h2>Shoes</h2>
+          <a href="#shoes">See All</a>
+        </div>
+
+        <div class="product-grid">
+
+          <article class="product-card">
+
+            <div class="product-image">
+              <img src="./img/1794386890411.png" alt="Reebok Dart Men's Shoes">
+            </div>
+
+            <h3>Reebok Dart Men's Shoes</h3>
+
+            <p>Some quick example text to build on the card title</p>
+
+            <span class="product-price">$900</span>
+
+            <button class="buy-button" onclick="addProduct(this)">
+              Buy Now
+            </button>
+
+          </article>
+
+
+          <article class="product-card">
+
+            <div class="product-image">
+              <img src="./img/1794386918174.png" alt="Reebok Pump">
+            </div>
+
+            <h3>Reebok Pump</h3>
+
+            <p>Some quick example text to build on the card title</p>
+
+            <span class="product-price">$900</span>
+
+            <button class="buy-button" onclick="addProduct(this)">
+              Buy Now
+            </button>
+
+          </article>
+
+
+          <article class="product-card">
+
+            <div class="product-image">
+              <img src="./img/1794386942791.png" alt="Reebok All Terrain">
+            </div>
+
+            <h3>Reebok All Terrain</h3>
+
+            <p>Some quick example text to build on the card title</p>
+
+            <span class="product-price">$900</span>
+
+            <button class="buy-button" onclick="addProduct(this)">
+              Buy Now
+            </button>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- BAGS -->
+    <section class="products-section bags-section" id="bags">
+
+      <div class="container">
+
+        <div class="products-heading">
+          <h2>Bags</h2>
+          <a href="#bags">See All</a>
+        </div>
+
+        <div class="product-grid">
+
+          <article class="product-card">
+
+            <div class="product-image">
+              <img src="./img/1794387373049.png" alt="Ison Backpack">
+            </div>
+
+            <h3>Ison Backpack</h3>
+
+            <p>Some quick example text to build on the card title</p>
+
+            <span class="product-price">$900</span>
+
+            <button class="buy-button" >
+              Buy Now
+            </button>
+
+          </article>
+
+
+          <article class="product-card">
+
+            <div class="product-image">
+              <img src="./img/1794387399420.png" alt="Biaowang Backpack">
+            </div>
+
+            <h3>Biaowang Backpack</h3>
+
+            <p>Some quick example text to build on the card title</p>
+
+            <span class="product-price">$900</span>
+
+            <button class="buy-button" >
+              Buy Now
+            </button>
+
+          </article>
+
+
+          <article class="product-card">
+
+            <div class="product-image">
+              <img src="./img/1794387452617.png" alt="Dxyizu WS54 Smart">
+            </div>
+
+            <h3>Dxyizu WS54 Smart</h3>
+
+            <p>Some quick example text to build on the card title</p>
+
+            <span class="product-price">$900</span>
+
+            <button class="buy-button" >
+              Buy Now
+            </button>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- NEWSLETTER -->
+    <section class="container" id="contact">
+
+      <div class="newsletter">
+
+        <h2>LET'S STAY IN TOUCH</h2>
+
+        <p>Get updates on sales specials and more</p>
+
+        <form class="newsletter-form" id="sub">
+
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          >
+
+          <button type="submit">Send</button>
+
+        </form>
+
+        <p id="msg" class="message">
+          Rahmat! Obuna bo‘ldingiz.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      © Panda Commerce | Designed by
+      <a href="#">Panda Team</a>
+    </p>
+
+  </footer>
+
+</body>
 </html>
